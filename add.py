@@ -16,6 +16,8 @@ def add(a,b):
     
     l=list(str(int(dc(a,n).replace('.',''))+int(dc(b,n).replace('.',''))).zfill(n+1))
     l.insert(-n,'.')
+    if l[0]+l[1]=='-.':
+        l.insert(1,'0')
     
     return ''.join(l)
 
