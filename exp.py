@@ -1,6 +1,7 @@
 n=10 ###### input number of digits here ######
 
 def dc(a,n):
+    a=str(a)
     n=int(n)
     if '.' in a:
         p=n-len(a)+a.index('.')+1

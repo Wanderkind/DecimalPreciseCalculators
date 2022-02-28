@@ -1,4 +1,5 @@
 def dc(a,n):
+    a=str(a)
     n=int(n)
     if '.' in a:
         P=n-len(a)+a.index('.')+1
