@@ -9,3 +9,9 @@ def dc(a,n):
     else:
         a+='.'+'0'*n
     return a
+
+'''
+while 1:
+    a,n=input().split()
+    print(dc(a,n))
+'''
