@@ -14,19 +14,10 @@ def dc(a,n):
 
 def add(a,b):
     
-    A=int(float(a))
-    B=int(float(b))
-    a=dc(a,n)[len(str(A)):]
-    b=dc(b,n)[len(str(B)):]
+    l=list(str(int(dc(a,n).replace('.',''))+int(dc(b,n).replace('.',''))).zfill(n+1))
+    l.insert(-n,'.')
     
-    S=''
-    t=0
-    for i in range(n,0,-1):
-        s=int(a[i])+int(b[i])+t
-        t=int(s>9)
-        S=str(s%10)+S
-    
-    return str(A+B+t)+'.'+S
+    return ''.join(l)
 
 '''
 while 1:
