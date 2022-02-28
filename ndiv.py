@@ -37,7 +37,14 @@ def ndiv(A,b):
             z=str(int(s)%int(b)).zfill(B+u)
             for j in range(-u,B):
                 a[i+j]=z[j+u]
-    print(l)
+    
+    o=0
+    while 1:
+        if l[0]=='0' and l[1]!='.':
+            del l[0]
+        else:
+            break
+    
     return ''.join(l[:l.index('.')+1+n])
 
 '''
