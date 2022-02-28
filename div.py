@@ -21,6 +21,6 @@ def div(a,b):
 
 '''
 while 1:
-    A,b=input().split()
-    print(div(A,b))
+    a,b=input().split()
+    print(div(a,b))
 '''
