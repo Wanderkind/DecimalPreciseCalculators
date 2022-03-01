@@ -1,9 +1,9 @@
 n=10 ###### input number of digits here ######
 
-def ndiv(A,b):
+def ndiv(A,q):
     a=list(str(A))
-    B=len(str(b))
-    b=int(b)
+    b=flr(str(q))
+    B=len(b)
     
     if '.' in a:
         p=len(a)-a.index('.')-1

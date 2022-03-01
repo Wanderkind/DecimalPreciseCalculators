@@ -14,7 +14,9 @@ def dc(a,n):
     return a
 
 def mul(a,b):
-    l=list(str(int(dc(a,n).replace('.',''))*int(dc(b,n).replace('.',''))).zfill(n+1))[:-n]
+    a=str(a)
+    b=str(b)
+    l=list(str(int(dc(a,n).replace('.',''))*int(dc(b,n).replace('.',''))).zfill(2*n+1))[:-n]
     l.insert(-n,'.')
     if l[0]+l[1]=='-.':
         l[1]='0.'

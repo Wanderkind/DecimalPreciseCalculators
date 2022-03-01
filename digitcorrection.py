@@ -2,11 +2,11 @@ def dc(a,n):
     a=str(a)
     n=int(n)
     if '.' in a:
-        P=n-len(a)+a.index('.')+1
-        if P>0:
-            a+='0'*P
-        if P<0:
-            a=a[:P]
+        p=n-len(a)+a.index('.')+1
+        if p>0:
+            a+='0'*p
+        if p<0:
+            a=a[:p]
     else:
         a+='.'+'0'*n
     return a
