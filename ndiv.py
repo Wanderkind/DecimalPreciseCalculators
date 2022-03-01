@@ -38,7 +38,6 @@ def ndiv(A,b):
             for j in range(-u,B):
                 a[i+j]=z[j+u]
     
-    o=0
     while 1:
         if l[0]=='0' and l[1]!='.':
             del l[0]
