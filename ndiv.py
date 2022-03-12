@@ -1,5 +1,12 @@
 n=10 ###### input number of digits here ######
 
+def flr(x):
+    if '.' in x:
+        x=str(x)
+        return x[:x.index('.')]
+    else:
+        return x
+
 def ndiv(A,q):
     a=list(str(A))
     b=flr(str(q))
