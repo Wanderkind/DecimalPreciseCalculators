@@ -19,7 +19,7 @@ def sqrtapprox(a):
     return ''.join(T)
 
 '''
-from math imort sqrt
+from math import sqrt
 while 1:
     a=input()
     print(sqrtapprox(a))
