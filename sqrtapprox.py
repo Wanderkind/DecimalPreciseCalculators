@@ -1,5 +1,7 @@
 # clumsy!
 
+n=400 ###### input number of digits here ######
+
 def sqrtapprox(a):
     A=list(dc(a,n))
     A.remove('.')
