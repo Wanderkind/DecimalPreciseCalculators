@@ -3,7 +3,7 @@ n=400 ###### input number of digits here ######
 from math import isqrt
 
 def Sqrt(a):
-    A=dc(a,n)
+    A=dc(a,2*n)
     p=A.index('.')
     P=p%2
     A=P*'0'+A
@@ -15,7 +15,7 @@ def Sqrt(a):
         t=r-(20*u+z)*z
         u=10*u+z
     U=str(u)
-    for I in range(n//2):
+    for I in range(n):
         i=1+p+P+2*I
         r=int(A[i:i+2])+100*t
         z=-10*u+isqrt(100*u*u+r)
