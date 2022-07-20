@@ -1,5 +1,3 @@
-# clumsy!
-
 n=400 ###### input number of digits here ######
 
 from math import isqrt
