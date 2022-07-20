@@ -2,6 +2,8 @@
 
 n=400 ###### input number of digits here ######
 
+from math import isqrt
+
 def Sqrt(a):
     A=dc(a,n)
     p=A.index('.')
